@@ -128,10 +128,25 @@ struct TRIE{
 int main()
 {
     TRIE tt;
-    tt.add("hasib", "হাছিব");
-    tt.add("hena", "হেনা");
+    int pos;
+    tt.add("hasib", "1");
+    tt.add("hasib", "1");
+    tt.add("hasib", "1");
+    tt.add("hasib", "1");
+    tt.add("has", "2");
 
-    cout<<tt.comeHere[tt.find("hasib")];
+
+    pos = tt.find("hasib");
+
+    if(pos >= 0)
+    {
+        cout<<tt.comeHere[pos]<<endl;
+    }
+    else
+    {
+        cout<<"NOT FOUND"<<endl;
+    }
+
 
 
 
