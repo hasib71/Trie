@@ -109,7 +109,7 @@ bool find(string str)
 
 int main()
 {
-    head.end_here = -1;
+    head.end_here = 0;
     head.id = 1;
     allnodes.pb(head);
 
